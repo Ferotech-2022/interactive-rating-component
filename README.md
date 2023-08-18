@@ -69,4 +69,4 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Githubc - [@ferotech-2022](https://www.github.com/ferotech-2022)
+- Github - [@ferotech-2022](https://www.github.com/ferotech-2022)
