@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Interactive rating component</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-veryDarkBlue font-sans text-base flex flex-col items-center">
+  <main class="text-white flex h-screen items-center justify-center p-6 mb-0">
+    <div class="card bg-gradient-to-b from-from-50 to-to-50 flex flex-col justify-center p-6 rounded-2xl sm:w-96">
+      <div>
+        <img class="bg-darkBlue p-2 rounded-full w-10 h-10" src="./images/icon-star.svg" alt="star icon" />
+      </div>
+      <h3 class="mt-4 font-bold text-2xl">How did we do?</h3>
+      <p class="mt-3 text-lightGrey text-lg"> Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering! </p>
+      <ul class="flex justify-between mt-4">
+        <li><button value="1"
+            class="btn bg-darkBlue w-12 h-12 rounded-full flex justify-center items-center hover:bg-orange transition duration-300">1</button>
+        </li>
+        <li><button value="2"
+            class="btn bg-darkBlue w-12 h-12 rounded-full flex justify-center items-center hover:bg-orange transition duration-300">2</button>
+        </li>
+        <li><button value="3"
+            class="btn bg-darkBlue w-12 h-12 rounded-full flex justify-center items-center hover:bg-orange transition duration-300">3</button>
+        </li>
+        <li><button value="4"
+            class="btn bg-darkBlue w-12 h-12 rounded-full flex justify-center items-center hover:bg-orange transition duration-300">4</button>
+        </li>
+        <li><button value="5"
+            class="btn bg-darkBlue w-12 h-12 rounded-full flex justify-center items-center hover:bg-orange transition duration-300">5</button>
+        </li>
+      </ul>
+      <button id="submit" type="submit"
+        class="mt-6 bg-orange rounded-full py-3 uppercase font-sans tracking-widest  hover:bg-white hover:text-orange text-bold transition duration-300">Submit</button>
+    </div>
+    <div
+      class="thankyou hidden bg-gradient-to-b from-from-50 to-to-50 flex-col justify-center p-6 rounded-2xl sm:w-96 items-center text-center">
+      <img class="w-28" src="./images/illustration-thank-you.svg" alt="thankyou image">
+      <p class="text-orange bg-darkBlue text-sm px-4 py-1 rounded-full mt-6 mb-0"> You selected <span
+          id="rating"></span> out of 5 </p>
+      <h3 class="mt-8 mb-0 font-bold text-2xl"> Thank you! </h3>
+      <p class="mt-0 text-lightGrey p-4"> We appreciate you taking the time to give a rating. If you ever need more
+        support, don’t hesitate to get in touch! </p>
+    </div>
+  </main>
+  <footer class="bg-veryDarkBlue text-white mb-7 mt-0"> Coded by mubarak </footer>
+  <script src="./main.js"></script>
+</body>
+
+</html>
